@@ -15,9 +15,9 @@ export function Navigation() {
   };
 
   const navLinks = [
-    { label: "About", id: "about" },
-    { label: "Projects", id: "projects" },
-    { label: "Skills", id: "skills" },
+    { label: "À Propos", id: "about" },
+    { label: "Projets", id: "projects" },
+    { label: "Compétences", id: "skills" },
     { label: "Contact", id: "contact" },
   ];
 

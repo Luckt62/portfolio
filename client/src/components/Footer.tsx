@@ -16,7 +16,7 @@ export function Footer() {
           <div>
             <h3 className="font-display text-xl font-bold mb-4">Portfolio</h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Building modern web applications with passion and precision.
+              Créer des applications web modernes avec passion et précision.
             </p>
             <div className="flex gap-2">
               <Button variant="ghost" size="icon" asChild data-testid="footer-github">
@@ -43,28 +43,28 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Liens Rapides</h4>
             <nav className="space-y-2">
               <button
                 onClick={() => scrollToSection("about")}
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                 data-testid="footer-link-about"
               >
-                About
+                À Propos
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                 data-testid="footer-link-projects"
               >
-                Projects
+                Projets
               </button>
               <button
                 onClick={() => scrollToSection("skills")}
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                 data-testid="footer-link-skills"
               >
-                Skills
+                Compétences
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
@@ -77,10 +77,10 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Get In Touch</h4>
+            <h4 className="font-semibold mb-4">Me Contacter</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Have a project in mind?</p>
-              <p>Let's work together to bring your ideas to life.</p>
+              <p>Vous avez un projet en tête ?</p>
+              <p>Travaillons ensemble pour donner vie à vos idées.</p>
               <Button
                 variant="outline"
                 size="sm"
@@ -88,7 +88,7 @@ export function Footer() {
                 data-testid="footer-button-contact"
                 className="mt-4"
               >
-                Contact Me
+                Me Contacter
               </Button>
             </div>
           </div>
@@ -96,7 +96,7 @@ export function Footer() {
 
         <div className="pt-8 border-t text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
-            Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> by Full-Stack Developer
+            Fait avec <Heart className="h-4 w-4 text-red-500 fill-red-500" /> par Développeur Full-Stack
             <span className="mx-2">•</span>
             {new Date().getFullYear()}
           </p>

@@ -17,13 +17,13 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Full-Stack Developer
-                <span className="block text-primary">Building Modern Web</span>
-                <span className="block">Applications</span>
+                Développeur Full-Stack
+                <span className="block text-primary">Créant des Applications</span>
+                <span className="block">Web Modernes</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                Crafting seamless digital experiences with cutting-edge technologies. 
-                Specialized in TypeScript, React, and Node.js development.
+                Je crée des expériences numériques fluides avec des technologies de pointe. 
+                Spécialisé dans le développement TypeScript, React et Node.js.
               </p>
             </div>
 
@@ -34,7 +34,7 @@ export function HeroSection() {
                 data-testid="button-view-projects"
                 className="gap-2"
               >
-                View Projects
+                Voir les Projets
                 <ArrowRight className="h-4 w-4" />
               </Button>
               <Button
@@ -43,7 +43,7 @@ export function HeroSection() {
                 onClick={() => scrollToSection("contact")}
                 data-testid="button-contact-me"
               >
-                Contact Me
+                Me Contacter
               </Button>
               <Button
                 size="lg"
@@ -52,19 +52,19 @@ export function HeroSection() {
                 className="gap-2"
               >
                 <Download className="h-4 w-4" />
-                Resume
+                CV
               </Button>
             </div>
 
             <div className="flex items-center gap-8 pt-4">
               <div>
                 <div className="text-3xl font-bold text-foreground">5+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-sm text-muted-foreground">Ans d'Expérience</div>
               </div>
               <div className="h-12 w-px bg-border"></div>
               <div>
                 <div className="text-3xl font-bold text-foreground">50+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
+                <div className="text-sm text-muted-foreground">Projets Réalisés</div>
               </div>
               <div className="h-12 w-px bg-border"></div>
               <div>
@@ -78,7 +78,7 @@ export function HeroSection() {
             <div className="relative rounded-2xl overflow-hidden">
               <img
                 src={heroImage}
-                alt="Modern developer workspace"
+                alt="Espace de travail de développeur moderne"
                 className="w-full h-auto"
                 data-testid="img-hero"
               />
@@ -88,7 +88,7 @@ export function HeroSection() {
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block">
           <div className="text-sm text-muted-foreground text-center">
-            <div>Scroll to explore</div>
+            <div>Défiler pour explorer</div>
             <div className="mt-2">↓</div>
           </div>
         </div>

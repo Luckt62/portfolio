@@ -21,12 +21,11 @@ export function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
     
     toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      title: "Message envoyé !",
+      description: "Merci de m'avoir contacté. Je vous répondrai bientôt.",
     });
     
     setFormData({ name: "", email: "", subject: "", message: "" });
@@ -44,9 +43,9 @@ export function ContactSection() {
     <section id="contact" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Entrer en Contact</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from you
+            Vous avez un projet en tête ou souhaitez collaborer ? J'aimerais avoir de vos nouvelles
           </p>
         </div>
 
@@ -54,19 +53,19 @@ export function ContactSection() {
           <div>
             <Card>
               <CardHeader>
-                <CardTitle>Send me a message</CardTitle>
+                <CardTitle>Envoyez-moi un message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as possible
+                  Remplissez le formulaire ci-dessous et je vous répondrai dès que possible
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">Nom</Label>
                     <Input
                       id="name"
                       name="name"
-                      placeholder="Your name"
+                      placeholder="Votre nom"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -80,7 +79,7 @@ export function ContactSection() {
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder="votre.email@exemple.com"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -89,11 +88,11 @@ export function ContactSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
+                    <Label htmlFor="subject">Sujet</Label>
                     <Input
                       id="subject"
                       name="subject"
-                      placeholder="What's this about?"
+                      placeholder="De quoi s'agit-il ?"
                       value={formData.subject}
                       onChange={handleChange}
                       required
@@ -106,7 +105,7 @@ export function ContactSection() {
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Tell me about your project..."
+                      placeholder="Parlez-moi de votre projet..."
                       value={formData.message}
                       onChange={handleChange}
                       required
@@ -121,7 +120,7 @@ export function ContactSection() {
                     disabled={isSubmitting}
                     data-testid="button-submit"
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Envoi en cours..." : "Envoyer le Message"}
                   </Button>
                 </form>
               </CardContent>
@@ -131,9 +130,9 @@ export function ContactSection() {
           <div className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
+                <CardTitle>Informations de Contact</CardTitle>
                 <CardDescription>
-                  Feel free to reach out through any of these channels
+                  N'hésitez pas à me contacter via l'un de ces canaux
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -154,9 +153,9 @@ export function ContactSection() {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <div className="font-medium">Location</div>
+                    <div className="font-medium">Localisation</div>
                     <div className="text-sm text-muted-foreground">
-                      San Francisco, CA
+                      Paris, France
                     </div>
                   </div>
                 </div>
@@ -166,9 +165,9 @@ export function ContactSection() {
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <div className="font-medium">Response Time</div>
+                    <div className="font-medium">Temps de Réponse</div>
                     <div className="text-sm text-muted-foreground">
-                      Usually within 24 hours
+                      Généralement sous 24 heures
                     </div>
                   </div>
                 </div>
@@ -177,9 +176,9 @@ export function ContactSection() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Social Media</CardTitle>
+                <CardTitle>Réseaux Sociaux</CardTitle>
                 <CardDescription>
-                  Connect with me on social platforms
+                  Connectez-vous avec moi sur les plateformes sociales
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -206,9 +205,9 @@ export function ContactSection() {
             <Card className="bg-primary/5">
               <CardContent className="pt-6">
                 <div className="text-center space-y-2">
-                  <div className="text-lg font-semibold">Open to Opportunities</div>
+                  <div className="text-lg font-semibold">Ouvert aux Opportunités</div>
                   <p className="text-sm text-muted-foreground">
-                    Currently available for freelance projects and full-time positions
+                    Actuellement disponible pour des projets freelance et des postes à temps plein
                   </p>
                 </div>
               </CardContent>

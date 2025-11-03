@@ -8,9 +8,9 @@ export function AboutSection() {
     <section id="about" className="py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">À Propos de Moi</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate about creating elegant solutions to complex problems
+            Passionné par la création de solutions élégantes à des problèmes complexes
           </p>
         </div>
 
@@ -18,29 +18,30 @@ export function AboutSection() {
           <div className="lg:col-span-2 space-y-6">
             <div className="prose prose-lg max-w-none">
               <p className="text-foreground leading-relaxed">
-                I'm a full-stack developer with a passion for building scalable web applications 
-                that make a difference. With over 5 years of experience in the industry, I've had 
-                the privilege of working with startups and established companies to bring their 
-                digital visions to life.
+                Je suis un développeur full-stack passionné par la création d'applications web évolutives 
+                qui font la différence. Avec plus de 5 ans d'expérience dans l'industrie, j'ai eu le 
+                privilège de travailler avec des startups et des entreprises établies pour donner vie à 
+                leurs visions numériques.
               </p>
               <p className="text-foreground leading-relaxed">
-                My expertise spans across modern JavaScript frameworks, cloud infrastructure, and 
-                DevOps practices. I believe in writing clean, maintainable code and following 
-                best practices to ensure long-term project success.
+                Mon expertise couvre les frameworks JavaScript modernes, l'infrastructure cloud et les 
+                pratiques DevOps. Je crois en l'écriture de code propre et maintenable et en suivant les 
+                meilleures pratiques pour assurer le succès à long terme des projets.
               </p>
               <p className="text-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge through technical writing and mentoring.
+                Quand je ne code pas, vous me trouverez en train d'explorer de nouvelles technologies, 
+                de contribuer à des projets open-source, ou de partager mes connaissances à travers 
+                l'écriture technique et le mentorat.
               </p>
             </div>
 
             <div className="flex items-center gap-4 pt-4">
               <Button data-testid="button-download-cv" className="gap-2">
                 <Download className="h-4 w-4" />
-                Download CV
+                Télécharger le CV
               </Button>
               <div className="text-sm text-muted-foreground">
-                Available for freelance opportunities
+                Disponible pour des opportunités freelance
               </div>
             </div>
           </div>
@@ -49,7 +50,7 @@ export function AboutSection() {
             <div className="relative">
               <img
                 src={profileImage}
-                alt="Professional headshot"
+                alt="Photo professionnelle"
                 className="w-full rounded-2xl"
                 data-testid="img-profile"
               />
@@ -58,11 +59,11 @@ export function AboutSection() {
             <div className="grid grid-cols-2 gap-4">
               <Card className="p-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-2">5+</div>
-                <div className="text-sm text-muted-foreground">Years of Experience</div>
+                <div className="text-sm text-muted-foreground">Ans d'Expérience</div>
               </Card>
               <Card className="p-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
+                <div className="text-sm text-muted-foreground">Projets Réalisés</div>
               </Card>
               <Card className="p-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-2">20+</div>
@@ -70,7 +71,7 @@ export function AboutSection() {
               </Card>
               <Card className="p-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+                <div className="text-sm text-muted-foreground">Satisfaction Client</div>
               </Card>
             </div>
           </div>

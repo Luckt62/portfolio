@@ -11,7 +11,7 @@ const skillCategories = [
   {
     title: "Backend",
     icon: Database,
-    skills: ["Node.js", "Express", "NestJS", "PostgreSQL", "MongoDB", "Redis", "REST APIs", "WebSocket"],
+    skills: ["Node.js", "Express", "NestJS", "PostgreSQL", "MongoDB", "Redis", "API REST", "WebSocket"],
   },
   {
     title: "DevOps & Cloud",
@@ -19,7 +19,7 @@ const skillCategories = [
     skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Vercel", "Nginx", "Linux"],
   },
   {
-    title: "Tools & Other",
+    title: "Outils & Autres",
     icon: Wrench,
     skills: ["Git", "VS Code", "Figma", "Jest", "Postman", "Prisma", "Drizzle", "Vite"],
   },
@@ -30,9 +30,9 @@ export function SkillsSection() {
     <section id="skills" className="py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Technical Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Compétences Techniques</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit for building modern, scalable applications
+            Une boîte à outils complète pour créer des applications modernes et évolutives
           </p>
         </div>
 

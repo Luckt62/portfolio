@@ -9,8 +9,8 @@ import analyticsImg from "@assets/generated_images/Analytics_dashboard_screensho
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with real-time inventory management, payment processing, and advanced analytics dashboard.",
+    title: "Plateforme E-Commerce",
+    description: "Une plateforme e-commerce complète avec gestion des stocks en temps réel, traitement des paiements et tableau de bord analytique avancé.",
     image: ecommerceImg,
     technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
     liveUrl: "https://example.com",
@@ -19,8 +19,8 @@ const projects = [
   },
   {
     id: 2,
-    title: "Task Management System",
-    description: "Collaborative task management tool with real-time updates, team collaboration features, and advanced project tracking.",
+    title: "Système de Gestion de Tâches",
+    description: "Outil de gestion de tâches collaboratif avec mises à jour en temps réel, fonctionnalités de collaboration d'équipe et suivi de projet avancé.",
     image: taskManagerImg,
     technologies: ["TypeScript", "Next.js", "Prisma", "WebSocket"],
     liveUrl: "https://example.com",
@@ -29,8 +29,8 @@ const projects = [
   },
   {
     id: 3,
-    title: "Analytics Dashboard",
-    description: "Real-time analytics platform with data visualization, custom reporting, and automated insights generation.",
+    title: "Tableau de Bord Analytique",
+    description: "Plateforme d'analyse en temps réel avec visualisation de données, rapports personnalisés et génération automatique d'insights.",
     image: analyticsImg,
     technologies: ["React", "D3.js", "Express", "MongoDB"],
     liveUrl: "https://example.com",
@@ -47,9 +47,9 @@ export function ProjectsSection() {
     <section id="projects" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Projets en Vedette</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A selection of my recent work showcasing various technologies and problem-solving approaches
+            Une sélection de mes travaux récents présentant diverses technologies et approches de résolution de problèmes
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export function ProjectsSection() {
               <div className="p-8 flex flex-col justify-between">
                 <div>
                   <div className="mb-2">
-                    <Badge variant="secondary" data-testid={`badge-featured-${featuredProject.id}`}>Featured Project</Badge>
+                    <Badge variant="secondary" data-testid={`badge-featured-${featuredProject.id}`}>Projet en Vedette</Badge>
                   </div>
                   <CardHeader className="p-0 mb-4">
                     <CardTitle className="text-2xl mb-2">{featuredProject.title}</CardTitle>
@@ -85,13 +85,13 @@ export function ProjectsSection() {
                   <Button asChild data-testid={`button-live-${featuredProject.id}`}>
                     <a href={featuredProject.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
                       <ExternalLink className="h-4 w-4" />
-                      Live Demo
+                      Démo en Direct
                     </a>
                   </Button>
                   <Button variant="outline" asChild data-testid={`button-github-${featuredProject.id}`}>
                     <a href={featuredProject.githubUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
                       <Github className="h-4 w-4" />
-                      View Code
+                      Voir le Code
                     </a>
                   </Button>
                 </CardFooter>
@@ -132,7 +132,7 @@ export function ProjectsSection() {
                 <Button size="sm" asChild data-testid={`button-live-${project.id}`}>
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
                     <ExternalLink className="h-4 w-4" />
-                    Live Demo
+                    Démo
                   </a>
                 </Button>
                 <Button size="sm" variant="outline" asChild data-testid={`button-github-${project.id}`}>
