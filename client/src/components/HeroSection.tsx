@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/Modern_developer_hero_illustration_243abf15.png";
 
 export function HeroSection() {
@@ -44,15 +44,6 @@ export function HeroSection() {
                 data-testid="button-contact-me"
               >
                 Me Contacter
-              </Button>
-              <Button
-                size="lg"
-                variant="secondary"
-                data-testid="button-download-resume"
-                className="gap-2"
-              >
-                <Download className="h-4 w-4" />
-                CV
               </Button>
             </div>
 

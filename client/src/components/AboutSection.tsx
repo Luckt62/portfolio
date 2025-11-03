@@ -1,6 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 import profileImage from "@assets/generated_images/Professional_developer_headshot_40bce728.png";
 
 export function AboutSection() {
@@ -35,11 +33,7 @@ export function AboutSection() {
               </p>
             </div>
 
-            <div className="flex items-center gap-4 pt-4">
-              <Button data-testid="button-download-cv" className="gap-2">
-                <Download className="h-4 w-4" />
-                Télécharger le CV
-              </Button>
+            <div className="pt-4">
               <div className="text-sm text-muted-foreground">
                 Disponible pour des opportunités freelance
               </div>
