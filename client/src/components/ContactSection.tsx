@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,20 +26,22 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     toast({
       title: "Message envoyé !",
       description: "Merci de m'avoir contacté. Je vous répondrai bientôt.",
     });
-    
+
     setFormData({ name: "", email: "", subject: "", message: "" });
     setIsSubmitting(false);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }));
@@ -43,9 +51,12 @@ export function ContactSection() {
     <section id="contact" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Entrer en Contact</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Entrer en Contact
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Vous avez un projet en tête ou souhaitez collaborer ? J'aimerais avoir de vos nouvelles
+            Vous avez un projet en tête ou souhaitez collaborer ? J'aimerais
+            avoir de vos nouvelles
           </p>
         </div>
 
@@ -55,7 +66,8 @@ export function ContactSection() {
               <CardHeader>
                 <CardTitle>Envoyez-moi un message</CardTitle>
                 <CardDescription>
-                  Remplissez le formulaire ci-dessous et je vous répondrai dès que possible
+                  Remplissez le formulaire ci-dessous et je vous répondrai dès
+                  que possible
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -142,8 +154,11 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="font-medium">Email</div>
-                    <a href="mailto:hello@example.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                      hello@example.com
+                    <a
+                      href="mailto:hello@example.com"
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      luckt.rbx@gmail.com
                     </a>
                   </div>
                 </div>
@@ -155,7 +170,7 @@ export function ContactSection() {
                   <div>
                     <div className="font-medium">Localisation</div>
                     <div className="text-sm text-muted-foreground">
-                      Paris, France
+                      Lille, France
                     </div>
                   </div>
                 </div>
@@ -167,7 +182,7 @@ export function ContactSection() {
                   <div>
                     <div className="font-medium">Temps de Réponse</div>
                     <div className="text-sm text-muted-foreground">
-                      Généralement sous 24 heures
+                      Généralement sous 6 heures
                     </div>
                   </div>
                 </div>
@@ -183,18 +198,48 @@ export function ContactSection() {
               </CardHeader>
               <CardContent>
                 <div className="flex gap-3">
-                  <Button variant="outline" size="icon" asChild data-testid="social-github">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    asChild
+                    data-testid="social-github"
+                  >
+                    <a
+                      href="https://github.com/Luckt62"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                    >
                       <Github className="h-5 w-5" />
                     </a>
                   </Button>
-                  <Button variant="outline" size="icon" asChild data-testid="social-linkedin">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    asChild
+                    data-testid="social-linkedin"
+                  >
+                    <a
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
                       <Linkedin className="h-5 w-5" />
                     </a>
                   </Button>
-                  <Button variant="outline" size="icon" asChild data-testid="social-twitter">
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    asChild
+                    data-testid="social-twitter"
+                  >
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
                       <Twitter className="h-5 w-5" />
                     </a>
                   </Button>
@@ -205,9 +250,12 @@ export function ContactSection() {
             <Card className="bg-primary/5">
               <CardContent className="pt-6">
                 <div className="text-center space-y-2">
-                  <div className="text-lg font-semibold">Ouvert aux Opportunités</div>
+                  <div className="text-lg font-semibold">
+                    Ouvert aux Opportunités
+                  </div>
                   <p className="text-sm text-muted-foreground">
-                    Actuellement disponible pour des projets freelance et des postes à temps plein
+                    Actuellement travail sur le projet Tower Defense ! Mais
+                    disponible pour des commisions !
                   </p>
                 </div>
               </CardContent>
