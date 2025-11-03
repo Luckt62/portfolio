@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/Modern_developer_hero_illustration_243abf15.png";
-import { SiTypescript, SiReact, SiNodedotjs, SiPython, SiPhp, SiJavascript, SiTailwindcss, SiPostgresql } from "react-icons/si";
+import { SiTypescript, SiPython, SiPhp, SiJavascript, , SiPostgresql } from "react-icons/si";
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
