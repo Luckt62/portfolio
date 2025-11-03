@@ -1,7 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/Modern_developer_hero_illustration_243abf15.png";
-import { SiTypescript, SiPython, SiPhp, SiJavascript, , SiPostgresql } from "react-icons/si";
+
+import {
+  SiTypescript,
+  SiPython,
+  SiPhp,
+  SiJavascript,
+  SiMysql,
+  SiSharp,
+  SiLua,
+  SiDart,
+  SiSymfony,
+  SiFlutter,
+  SiReact,
+  SiPostgresql,
+} from "react-icons/si";
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
@@ -16,8 +30,9 @@ export function HeroSection() {
       id="hero"
       className="min-h-screen flex items-center justify-center pt-16"
     >
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-6 py-20 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* LEFT SIDE */}
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -34,6 +49,7 @@ export function HeroSection() {
               </p>
             </div>
 
+            {/* ACTION BUTTONS */}
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
@@ -54,6 +70,7 @@ export function HeroSection() {
               </Button>
             </div>
 
+            {/* STATS */}
             <div className="flex items-center gap-8 pt-4">
               <div>
                 <div className="text-3xl font-bold text-foreground">2+</div>
@@ -77,39 +94,42 @@ export function HeroSection() {
               </div>
             </div>
 
+            {/* TECHNO ICONS */}
             <div className="pt-6">
-              <div className="text-sm text-muted-foreground mb-3">Technologies utilisées</div>
+              <div className="text-sm text-muted-foreground mb-3">
+                Technologies utilisées
+              </div>
+
               <div className="flex flex-wrap gap-4" data-testid="tech-icons">
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-typescript">
-                  <SiTypescript className="h-6 w-6 text-foreground" />
-                </div>
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-javascript">
-                  <SiJavascript className="h-6 w-6 text-foreground" />
-                </div>
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-react">
-                  <SiReact className="h-6 w-6 text-foreground" />
-                </div>
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-nodejs">
-                  <SiNodedotjs className="h-6 w-6 text-foreground" />
-                </div>
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-python">
-                  <SiPython className="h-6 w-6 text-foreground" />
-                </div>
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-php">
-                  <SiPhp className="h-6 w-6 text-foreground" />
-                </div>
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-tailwindcss">
-                  <SiTailwindcss className="h-6 w-6 text-foreground" />
-                </div>
-                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-postgresql">
-                  <SiPostgresql className="h-6 w-6 text-foreground" />
-                </div>
+                {[
+                  { icon: SiTypescript, test: "icon-typescript" },
+                  { icon: SiJavascript, test: "icon-javascript" },
+                  { icon: SiReact, test: "icon-react" },
+                  { icon: SiPython, test: "icon-python" },
+                  { icon: SiPhp, test: "icon-php" },
+                  { icon: SiPostgresql, test: "icon-postgresql" },
+                  { icon: SiMysql, test: "icon-mysql" },
+                  { icon: SiSharp, test: "icon-csharp" },
+                  { icon: SiSymfony, test: "icon-symfony" },
+                  { icon: SiFlutter, test: "icon-flutter" },
+                  { icon: SiDart, test: "icon-dart" },
+                  { icon: SiLua, test: "icon-lua" },
+                ].map(({ icon: Icon, test }) => (
+                  <div
+                    key={test}
+                    className="p-3 rounded-lg bg-card border border-border hover:shadow-lg transition"
+                    data-testid={test}
+                  >
+                    <Icon className="h-6 w-6 text-foreground" />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
+          {/* RIGHT SIDE / IMAGE */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={heroImage}
                 alt="Espace de travail de développeur moderne"
@@ -120,6 +140,7 @@ export function HeroSection() {
           </div>
         </div>
 
+        {/* SCROLL INDICATION */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block">
           <div className="text-sm text-muted-foreground text-center">
             <div>Défiler pour explorer</div>
