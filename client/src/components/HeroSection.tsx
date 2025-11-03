@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/Modern_developer_hero_illustration_243abf15.png";
+import { SiTypescript, SiReact, SiNodedotjs, SiPython, SiPhp, SiJavascript, SiTailwindcss, SiPostgresql } from "react-icons/si";
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
@@ -11,19 +12,25 @@ export function HeroSection() {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-16">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center pt-16"
+    >
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Développeur Full-Stack
-                <span className="block text-primary">Créant des Applications</span>
+                <span className="block text-primary">
+                  Créant des Applications
+                </span>
                 <span className="block">Web Modernes</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                Je crée des expériences numériques fluides avec des technologies de pointe. 
-                Spécialisé dans le développement TypeScript, React et Node.js.
+                Je crée des expériences numériques fluides avec des technologies
+                de pointe. Spécialisé dans le développement Typescript, Python,
+                PHP et encore d'autres.
               </p>
             </div>
 
@@ -49,18 +56,54 @@ export function HeroSection() {
 
             <div className="flex items-center gap-8 pt-4">
               <div>
-                <div className="text-3xl font-bold text-foreground">5+</div>
-                <div className="text-sm text-muted-foreground">Ans d'Expérience</div>
+                <div className="text-3xl font-bold text-foreground">2+</div>
+                <div className="text-sm text-muted-foreground">
+                  Ans d'Expérience
+                </div>
               </div>
               <div className="h-12 w-px bg-border"></div>
               <div>
-                <div className="text-3xl font-bold text-foreground">50+</div>
-                <div className="text-sm text-muted-foreground">Projets Réalisés</div>
+                <div className="text-3xl font-bold text-foreground">3+</div>
+                <div className="text-sm text-muted-foreground">
+                  Projets Réalisés
+                </div>
               </div>
               <div className="h-12 w-px bg-border"></div>
               <div>
-                <div className="text-3xl font-bold text-foreground">20+</div>
-                <div className="text-sm text-muted-foreground">Technologies</div>
+                <div className="text-3xl font-bold text-foreground">8+</div>
+                <div className="text-sm text-muted-foreground">
+                  Technologies
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-6">
+              <div className="text-sm text-muted-foreground mb-3">Technologies utilisées</div>
+              <div className="flex flex-wrap gap-4" data-testid="tech-icons">
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-typescript">
+                  <SiTypescript className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-javascript">
+                  <SiJavascript className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-react">
+                  <SiReact className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-nodejs">
+                  <SiNodedotjs className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-python">
+                  <SiPython className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-php">
+                  <SiPhp className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-tailwindcss">
+                  <SiTailwindcss className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="p-3 rounded-lg bg-card border border-border hover-elevate" data-testid="icon-postgresql">
+                  <SiPostgresql className="h-6 w-6 text-foreground" />
+                </div>
               </div>
             </div>
           </div>

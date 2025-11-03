@@ -1,27 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code2, Database, Cloud, Wrench } from "lucide-react";
+import { Code2, Database, Wrench } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Frontend",
     icon: Code2,
-    skills: ["React", "TypeScript", "Next.js", "Vue.js", "Tailwind CSS", "Redux", "GraphQL", "HTML/CSS"],
+    skills: ["TypeScript", "HTML/CSS", "Dart"],
   },
   {
     title: "Backend",
     icon: Database,
-    skills: ["Node.js", "Express", "NestJS", "PostgreSQL", "MongoDB", "Redis", "API REST", "WebSocket"],
-  },
-  {
-    title: "DevOps & Cloud",
-    icon: Cloud,
-    skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Vercel", "Nginx", "Linux"],
+    skills: ["Python", "SQL", "C#", "API REST"],
   },
   {
     title: "Outils & Autres",
     icon: Wrench,
-    skills: ["Git", "VS Code", "Figma", "Jest", "Postman", "Prisma", "Drizzle", "Vite"],
+    skills: ["Git", "VS Code", "Figma", "Postman"],
   },
 ];
 
@@ -30,9 +25,12 @@ export function SkillsSection() {
     <section id="skills" className="py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Compétences Techniques</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Compétences Techniques
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Une boîte à outils complète pour créer des applications modernes et évolutives
+            Une boîte à outils complète pour créer des applications modernes et
+            évolutives
           </p>
         </div>
 
@@ -40,7 +38,11 @@ export function SkillsSection() {
           {skillCategories.map((category) => {
             const Icon = category.icon;
             return (
-              <Card key={category.title} className="hover-elevate transition-all" data-testid={`card-skill-${category.title.toLowerCase()}`}>
+              <Card
+                key={category.title}
+                className="hover-elevate transition-all"
+                data-testid={`card-skill-${category.title.toLowerCase()}`}
+              >
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
                     <div className="p-2 bg-primary/10 rounded-lg">
@@ -52,7 +54,11 @@ export function SkillsSection() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
-                      <Badge key={skill} variant="secondary" data-testid={`badge-skill-${skill}`}>
+                      <Badge
+                        key={skill}
+                        variant="secondary"
+                        data-testid={`badge-skill-${skill}`}
+                      >
                         {skill}
                       </Badge>
                     ))}
