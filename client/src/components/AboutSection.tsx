@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import profileImage from "@assets/generated_images/Professional_developer_headshot_40bce728.png";
 
 export function AboutSection() {
   return (
@@ -41,15 +40,6 @@ export function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <div className="relative">
-              <img
-                src={profileImage}
-                alt="Photo professionnelle"
-                className="w-full rounded-2xl"
-                data-testid="img-profile"
-              />
-            </div>
-
             <div className="grid grid-cols-2 gap-4">
               <Card className="p-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-2">5+</div>
